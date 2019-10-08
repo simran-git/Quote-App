@@ -20,3 +20,109 @@
 .App-link {
   color: #09d3ac;
 }
+
+ body {
+  
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #16a085
+ }
+
+#root {
+  
+  height : 99vh;
+  width :  99 vh;
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items : center;
+
+}
+
+#heading {
+  margin : 50px;
+  text-align: center;
+  
+  
+}
+
+#quote-box {
+padding: 20px;
+width : 50vw;
+max-width : 50vw;
+min-height : 300px;
+display : flex;
+border : 2px solid  #16a085;
+flex-direction : column;
+background-color: rgb(245, 240, 240);
+color : #10a788;
+
+/*
+background-color : #eeeeee;
+*/
+}
+
+#text {
+  font-size : 40px;
+  margin : 20px;
+
+}
+
+
+#text:before {
+  content: open-quote;
+  font-size: 80px;
+}
+#text:after {
+  content:''
+}
+
+
+#author {
+  font-size : 25px;
+  display : flex;
+  flex-direction : row;
+  justify-content : flex-end;
+  margin: 10px;
+  padding : 10px;
+}
+#footer {
+  margin : 10px;
+  padding : 20px;
+  display : flex;
+  flex-direction : row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer button, #tweet{
+  padding : 5px 10px;
+  margin: 5px;
+  background-color: rgb(245, 240, 240);
+  color : #10a788;
+  font-size: 20px;
+  border: 1px solid #10a788;
+  outline:none;
+}
+
+#tweet {
+  border-radius: 60%;
+  background-color :inherit;
+  color: inherit;
+}
+#tweet a{
+  color: inherit;
+  font-size: 25px;
+}
+
+#tweet a:hover, #quote-button button:hover , #tweet:hover{
+  background-color:#10a788;
+  color: rgb(245, 240, 240);
+}
+#quote-button button:active{
+  background-color:#0fb190;
+  outline:none;
+  
+}
+#tweet a:active {
+  background-color:#0fb190;
+}
